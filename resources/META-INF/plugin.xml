@@ -89,6 +89,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <directoryProjectGenerator implementation="com.magento.idea.magento2plugin.generation.php.MagentoModuleGenerator"/>
         <projectTemplatesFactory implementation="com.magento.idea.magento2plugin.generation.php.MagentoTemplatesFactory"/>
+        <defaultLiveTemplatesProvider implementation="com.magento.idea.magento2plugin.project.LiveTemplateProvider"/>
 
         <projectService serviceImplementation="com.magento.idea.magento2plugin.project.Settings"/>
 
