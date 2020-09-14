@@ -56,6 +56,7 @@ public class UnitTestGenerator extends FileGenerator {
     protected void fillAttributes(Properties attributes) {
         attributes.setProperty("NAMESPACE", this.newUnitTestData.getNamespace());
         attributes.setProperty("CLASS_NAME", this.newUnitTestData.getClassName());
+        attributes.setProperty("NAMESPACE_PARENT_NAME", this.newUnitTestData.getNamespaceParentName());
     }
 
     private PhpFile createUnitTestClass(final String actionName) {
@@ -69,7 +70,7 @@ public class UnitTestGenerator extends FileGenerator {
     }
 
     private UnitTestTemplate getUnitTestTemplate() {
-        final String name = this.newUnitTestData.getClassName();
+        final String name = this.newUnitTestData.getClassName() + "Test";
         return new UnitTestTemplate(name);
     }
 

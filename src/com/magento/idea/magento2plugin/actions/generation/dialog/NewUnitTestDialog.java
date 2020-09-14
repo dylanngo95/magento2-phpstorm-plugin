@@ -81,7 +81,8 @@ public class NewUnitTestDialog  extends AbstractDialog {
                 this.getParentDirection(),
                 this.getClassName(),
                 this.getNamespace(),
-                this.moduleName
+                this.moduleName,
+                this.getNamespaceParentName() + "\\" + this.getClassName()
         );
 
         UnitTestGenerator generator = new UnitTestGenerator(project, newUnitTestData);
@@ -111,5 +112,18 @@ public class NewUnitTestDialog  extends AbstractDialog {
 
     private void suggestionParentDirectories() {
         this.unitTestParentDirectoryField.setText(UnitTestTemplate.DEFAULT_DIR);
+    }
+
+    private String getClassParentName() {
+        return this.getClassName().replace("Test", "");
+    }
+
+    private String getNamespaceParentName() {
+        final NamespaceBuilder namespaceBuilder = new NamespaceBuilder(
+                this.getModule(),
+                this.getClassName(),
+                this.getParentDirection().replace("Test/Unit/", "")
+        );
+        return namespaceBuilder.getNamespace();
     }
 }

@@ -11,18 +11,14 @@ public class NewUnitTestData {
     private String className;
     private String namespace;
     private String moduleName;
+    private String namespaceParentName;
 
-    /**
-     * Constructor NewUnitTestData.
-     * @param directory
-     * @param className
-     * @param namespace
-     */
-    public NewUnitTestData(String directory, String className, String namespace, String moduleName) {
+    public NewUnitTestData(String directory, String className, String namespace, String moduleName, String namespaceParentName) {
         this.directory = directory;
         this.className = className;
         this.namespace = namespace;
         this.moduleName = moduleName;
+        this.namespaceParentName = namespaceParentName;
     }
 
     public String getDirectory() {
@@ -55,5 +51,13 @@ public class NewUnitTestData {
 
     public void setModuleName(String moduleName) {
         this.moduleName = moduleName;
+    }
+
+    public String getNamespaceParentName() {
+        return namespaceParentName;
+    }
+
+    public void setNamespaceParentName(String namespaceParentName) {
+        this.namespaceParentName = namespaceParentName;
     }
 }

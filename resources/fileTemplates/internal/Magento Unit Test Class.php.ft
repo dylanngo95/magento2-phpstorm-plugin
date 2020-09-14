@@ -10,6 +10,7 @@ namespace ${NAMESPACE};
 use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
 use PHPUnit\Framework\TestCase;
 use Mockery;
+use ${NAMESPACE_PARENT_NAME};
 
 class ${CLASS_NAME}Test extends TestCase
 {
