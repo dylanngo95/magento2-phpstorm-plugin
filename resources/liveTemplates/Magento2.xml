@@ -1,0 +1,50 @@
+<templateSet group="Magento2">
+    <template name="m2config" value="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;config xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;urn:magento:module:Magento_Store:etc/config.xsd&quot;&gt;&#10;    &lt;default&gt;&#10;        &lt;key&gt;value&lt;/key&gt;&#10;        &lt;some&gt;&#10;            &lt;arbitrary&gt;&#10;                &lt;key&gt;value&lt;/key&gt;&#10;            &lt;/arbitrary&gt;&#10;        &lt;/some&gt;&#10;    &lt;/default&gt;&#10;    &lt;websites&gt;&#10;        &lt;base&gt;&#10;            &lt;key&gt;value&lt;/key&gt;&#10;        &lt;/admin&gt;&#10;    &lt;/websites&gt;&#10;&lt;/config&gt;&#10;" shortcut="TAB" description="m2config" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="XML" value="true" />
+            <option name="PHP" value="false" />
+            <option name="PHP Comment" value="false" />
+            <option name="PHP String Literal" value="false" />
+        </context>
+    </template>
+    <template name="m2registration" value="&lt;?php&#10;&#10;use Magento\Framework\Component\ComponentRegistrar;&#10;&#10;ComponentRegistrar::register(&#10;    ComponentRegistrar::THEME,&#10;      'frontend/Foo/mytheme',&#10;    __DIR__&#10;);" shortcut="TAB" description="registration" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="XML" value="true" />
+            <option name="PHP" value="false" />
+            <option name="PHP Comment" value="false" />
+            <option name="PHP String Literal" value="false" />
+        </context>
+    </template>
+    <template name="m2theme" value="&lt;theme xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;urn:magento:framework:Config/etc/theme.xsd&quot;&gt;&#10;    &lt;title&gt;My theme&lt;/title&gt;&#10;    &lt;parent&gt;Magento/blank&lt;/parent&gt;&#10;    &lt;media&gt;&#10;        &lt;preview_image&gt;media/preview.jpg&lt;/preview_image&gt;&#10;    &lt;/media&gt;&#10;&lt;/theme&gt;&#10;" description="m2theme" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="XML" value="true" />
+            <option name="PHP" value="false" />
+            <option name="PHP Comment" value="false" />
+            <option name="PHP String Literal" value="false" />
+        </context>
+    </template>
+    <template name="m2module" value="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;config&#10;    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;    xsi:noNamespaceSchemaLocation=&quot;urn:magento:framework:Module/etc/module.xsd&quot;&gt;&#10;   &lt;module name=&quot;Foo_Bar&quot;/&gt;&#10;&lt;/config&gt;&#10;" description="m2module" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="XML" value="true" />
+            <option name="PHP" value="false" />
+            <option name="PHP Comment" value="false" />
+            <option name="PHP String Literal" value="false" />
+        </context>
+    </template>
+    <template name="m2routes" value="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;config xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;urn:magento:framework:App/etc/routes.xsd&quot;&gt;&#10;    &lt;router id=&quot;standard&quot;&gt;&#10;        &lt;route id=&quot;my_route&quot; frontName=&quot;my-route&quot;&gt;&#10;            &lt;module name=&quot;Foo_Bar&quot;/&gt;&#10;        &lt;/route&gt;&#10;    &lt;/router&gt;&#10;&lt;/config&gt;&#10;" description="m2routes" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="XML" value="true" />
+            <option name="PHP" value="false" />
+            <option name="PHP Comment" value="false" />
+            <option name="PHP String Literal" value="false" />
+        </context>
+    </template>
+    <template name="m2di" value="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;config xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;urn:magento:framework:ObjectManager/etc/config.xsd&quot;&gt;&#10;&#10;&lt;/config&gt;&#10;" description="m2di" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="XML" value="true" />
+            <option name="PHP" value="false" />
+            <option name="PHP Comment" value="false" />
+            <option name="PHP String Literal" value="false" />
+        </context>
+    </template>
+</templateSet>

@@ -1,0 +1,42 @@
+<?php
+#parse("PHP File Header.php")
+
+declare(strict_types=1);
+
+#if (${NAMESPACE})
+namespace ${NAMESPACE};
+#end
+
+use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
+use PHPUnit\Framework\TestCase;
+use Mockery;
+use ${NAMESPACE_PARENT_NAME};
+
+class ${CLASS_NAME}Test extends TestCase
+{
+    /**
+     * @var ObjectManager
+     */
+    public $objectManager;
+
+    protected function setUp()
+    {
+        parent::setUp();
+        $this->objectManager = new ObjectManager($this);
+    }
+
+    protected function tearDown()
+    {
+        parent::tearDown();
+        Mockery::close();
+    }
+
+    /**
+     * @return object|${CLASS_NAME}
+     */
+    public function getSubjectUnderTest()
+    {
+        return $this->objectManager->getObject(${CLASS_NAME}::class, [
+        ]);
+    }
+}

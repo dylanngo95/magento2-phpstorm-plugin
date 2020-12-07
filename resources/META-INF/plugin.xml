@@ -67,6 +67,7 @@
             <action id="MagentoCreateCLICommand" class="com.magento.idea.magento2plugin.actions.generation.NewCLICommandAction" />
             <action id="MagentoCreateUiComponentGrid" class="com.magento.idea.magento2plugin.actions.generation.NewUiComponentGridAction" />
             <action id="MagentoCreateUiComponentForm" class="com.magento.idea.magento2plugin.actions.generation.NewUiComponentFormAction" />
+            <action id="MagentoCreateUnitTest" class="com.magento.idea.magento2plugin.actions.generation.NewUnitTestAction" />
             <add-to-group group-id="NewGroup" anchor="last"/>
         </group>
 
